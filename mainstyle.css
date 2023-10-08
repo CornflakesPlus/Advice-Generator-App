@@ -1,0 +1,120 @@
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(193, 38%, 86%);
+
+    background-color: hsl(217, 19%, 24%);
+    
+}
+
+.desk {
+    display: none;
+}
+
+main {
+    max-width: 490px;
+    background-color: hsl(217, 19%, 38%);
+    text-align: center;
+    margin: .5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+h4 {
+    color: hsl(150, 100%, 66%)
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 50px hsl(150, 100%, 66%);
+
+
+}
+
+.img-div {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.img-div::before {
+
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background: hsl(193, 38%, 86%); 
+
+}
+
+.img-div::after {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background: hsl(193, 38%, 86%); 
+}
+
+
+
+
+.die-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+
+
+    width: 50px;
+    height: 50px;
+    padding: 2rem;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+}
+
+
+
+
+    
+@media screen and (min-width: 490px){
+    .mob {
+        display: none;
+    }
+
+    .desk {
+        display: block;
+    }
+
+
+
+}
+
+
+
+
+
